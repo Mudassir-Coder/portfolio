@@ -53,6 +53,12 @@
   .hero-description {
     font-size: 0.8rem;
   }
+  .about-img {
+    width: 90%;
+  }
+  .form .input-box input {
+    width: 100%;
+  }
   .languages {
     display: block;
     text-align: left;
