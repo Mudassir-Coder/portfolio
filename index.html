@@ -150,17 +150,18 @@
 
     <section class="section contant-section" id="contact">
       <h3 class="section-heading">Get In <span class="section-tag">Touch</span></h3>
-      <form class="form">
+      <form action="https://formspree.io/f/xyzwngdj" id="contact-form" method="POST" class="form">
         <div class="input-box">
-          <input type="text" placeholder="Your Name">
-          <input type="email" placeholder="Email Address">
+          <input id="name" type="text" required placeholder="Your Name">
+          <input id="email" type="email" required placeholder="Email Address">
         </div>
         <div class="input-box">
-          <input type="number" placeholder="Mobile Number">
-          <input type="text" placeholder="Email Subject">
+          <input id="number" type="number" placeholder="Mobile Number">
+          <input id="subject" type="text" placeholder="Email Subject">
         </div>
-        <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
-        <input type="submit" value="Send Message" class="btn">
+        <textarea name="message" id="message" placeholder="Your Message" cols="30" rows="10"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="mesg"></p>
       </form>
     </section>
   </main>

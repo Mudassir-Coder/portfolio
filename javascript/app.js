@@ -36,7 +36,7 @@ ScrollReveal({
 })
 
 ScrollReveal().reveal('.hero-content,.hero-description,.languages,.about-description,.social-media,.section-heading');
-ScrollReveal().reveal('.hero-title,.hero-img,.about-img,.form', { delay: 1000, distance: '300px', origin: 'left' });
+ScrollReveal().reveal('.hero-title,.hero-img,.about-img,.form', { delay: 700, distance: '300px', origin: 'left' });
 ScrollReveal().reveal('.section-heading');
 
 
@@ -49,3 +49,39 @@ const typed = new Typed('.animatedText', {
   backDelay: 200,
   loop: true
 })
+
+
+
+
+
+
+
+
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const formData = {
+    Name: document.getElementById("name").value,
+    Email: document.getElementById("email").value,
+    Message: document.getElementById("message").value,
+    Number: document.getElementById("number").value,
+    Subject: document.getElementById("subject").value
+  };
+
+  fetch("https://formspree.io/f/xyzwngdj", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(formData)
+  })
+    .then(response => response.json())
+    .then(data => {
+      console.log("Success:", data);
+      const mesgEl = document.getElementById('mesg').textContent = 'Your Message Sent Succesfully';
+    })
+    .catch(error => {
+      console.error("Error:", error);
+      mesgEl.textContent = "There was an error sending your message."
+    });
+});
