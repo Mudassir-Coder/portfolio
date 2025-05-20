@@ -36,14 +36,14 @@ ScrollReveal({
 })
 
 ScrollReveal().reveal('.hero-content,.hero-description,.languages,.about-description,.social-media,.section-heading');
-ScrollReveal().reveal('.hero-title,.hero-img,.about-img,.form', { delay: 700, distance: '300px', origin: 'left' });
+ScrollReveal().reveal('.hero-title,.hero-img,.about-img,.form', { delay: 300, distance: '300px', origin: 'left' });
 ScrollReveal().reveal('.section-heading');
 
 
 /* Typing Animation */
 
 const typed = new Typed('.animatedText', {
-  strings: ['Frontend Developer', 'Blogger', 'Youtuber'],
+  strings: ['FrontendDev', 'BackendDev', 'Youtuber'],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 200,
