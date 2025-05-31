@@ -8,11 +8,11 @@ Welcome to my personal portfolio website! This site showcases my skills, project
 
 Technologies Used
 
-- **HTML5**
-- **CSS3**
-- **JavaScript**
-- **Responsive Design (Flexbox & Media Queries)**
-- **Git & GitHub**
+- HTML5
+- CSS3
+- JavaScript
+- Responsive Design (Flexbox & Media Queries)
+- Git & GitHub
 
 🚀 Features
 
@@ -23,13 +23,8 @@ Technologies Used
 - Projects section with live links
 - Contact section with form or email link
 - Smooth scrolling and scroll-to-top button
- 📁 Folder Structure
-
-
 
 📬 Contact Me
-
 📧 Email: mudassirkhan03190@gmail.com
-🌐 Portfolio: https://mudassirkhan.github.io
-🧑‍💻 GitHub: https://github.com/Mudassir-Coder
+
 
