@@ -91,18 +91,33 @@
           <button class="btn">Learn More</button>
         </p>
       </div>
-      <h3 class="language-heading">Programming Languages</h3>
+      <h3 class="section-heading">Technologies</h3>
       <ul class="list languages">
-        <li class="list-item place-items-center"><i class='bx bxl-html5'></i>HTML (HyperText Markup Language)</li>
-        <li class="list-item place-items-center"><i class='bx bxl-css3'></i>CSS (Cascadding Style Sheet)</li>
-        <li class="list-item place-items-center"><i class='bx bxl-javascript'></i>JS (JavaScript)</li>
+        <li class="list-item place-items-center single-technology">
+          <i class='bx bxl-html5'></i>HTML
+        </li>
+        <li class="list-item place-items-center single-technology">
+          <i class='bx bxl-css3'></i>CSS
+        </li>
+        <li class="list-item place-items-center single-technology">
+          <i class='bx bxl-javascript'></i>JS
+        </li>
+        <li class="list-item place-items-center single-technology">
+          <i class='bx bxl-nodejs'></i>Coming Soon
+        </li>
+        <li class="list-item place-items-center single-technology">
+          <i class='bx bxl-react'></i>Coming Soon
+        </li>
+        <li class="list-item place-items-center single-technology">
+          <i class='bx bxl-mongodb'></i>Coming Soon
+        </li>
       </ul>
     </section>
 
     <!-- Projects Section -->
 
     <section class="projects-section section" id="projects">
-      <h3 class="section-heading">My <span class="section-tag">Projects</span></h3>
+      <h3 class="section-heading">My <span class="section-tag">PortFolio</span></h3>
       <div class="projects">
         <div class="single-project">
           <figure>
@@ -136,14 +151,6 @@
             </figcaption>
           </figure>
         </div>
-        <div class="single-project">
-          <figure>
-            <img src="assets/project-5.JPG" alt="Disney" class="project-img">
-            <figcaption>
-              <h3 class="project-title">NewsFlash (Blog)</h3>
-            </figcaption>
-          </figure>
-        </div>
       </div>
     </section>
 
@@ -153,22 +160,22 @@
       <h3 class="section-heading">Get In <span class="section-tag">Touch</span></h3>
       <form action="https://formspree.io/f/xyzwngdj" id="contact-form" method="POST" class="form">
         <div class="input-box">
-          <input id="name" type="text" required placeholder="Your Name">
+          <input id="name" type="text" placeholder="Your Name">
           <input id="email" type="email" required placeholder="Email Address">
         </div>
         <div class="input-box">
           <input id="number" type="number" placeholder="Mobile Number">
           <input id="subject" type="text" placeholder="Email Subject">
         </div>
-        <textarea name="message" id="message" placeholder="Your Message" cols="30" rows="10"></textarea>
+        <textarea name="message" id="message" required placeholder="Your Message" cols="30" rows="10"></textarea>
         <button type="submit" class="btn">Send Message</button>
         <p id="mesg"></p>
       </form>
     </section>
   </main>
-  <footer class="footer">
-    <p class="footer-description">© 2025 Muhammad Mudassir. All rights reserved.
-      Built with ❤️ using HTML, CSS & JavaScript </p>
+  <footer class="footer place-items-center">
+    <p class="footer-description">© 2025 Muhammad Mudassir. All rights reserved.</p>
+    <a href="#" class="btn"><i class="ri-arrow-up-line"></i></a>
   </footer>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>

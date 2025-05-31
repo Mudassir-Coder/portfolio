@@ -54,6 +54,7 @@ body {
   background-color: var(--background-color);
   color: var(--paragraph-text);
   overflow-x: hidden;
+  transition: background-color 0.4s;
 }
 
 body.light-theme {
@@ -186,6 +187,11 @@ HEADER SECTION
   color: var(--link-hover);
 }
 
+#menu-btn {
+  padding: 0.5rem 1rem;
+  justify-content: center;
+}
+
 .theme-toggle-btn {
   padding: 0.1rem 0.7rem;
   background-color: transparent;
@@ -301,16 +307,50 @@ SEVICES SECTION
 }
 
 .languages {
-  text-align: center;
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.languages > .list-item {
-  width: fit-content;
-  margin-inline: 1rem;
-  display: inline-flex;
-  font-size: 1.3rem;
-  color: var(--main-heading);
-  margin-block: 1rem;
+.single-technology {
+  position: relative;
+  height: 200px;
+  font-size: 2rem;
+  text-align: center;
+  justify-content: center;
+  border: 4px solid;
+  border-image: linear-gradient(45deg, #0ef, #ff6ec7);
+  border-image-slice: 1;
+  color: var(--primary-text);
+  /*  animation: animateBorder 3s infinite ease-in-out; */
+  background-color: var(--secondary-background-color);
+}
+
+.single-technology > i {
+  font-size: 3rem;
+}
+
+@keyframes animateBorder {
+  0% {
+    border-image: linear-gradient(0deg, #0ef, #ff6ec7);
+    border-image-slice: 1;
+  }
+  25% {
+    border-image: linear-gradient(90deg, #0ef, #ff6ec7);
+    border-image-slice: 1;
+  }
+  50% {
+    border-image: linear-gradient(180deg, #0ef, #ff6ec7);
+    border-image-slice: 1;
+  }
+  75% {
+    border-image: linear-gradient(270deg, #0ef, #ff6ec7);
+    border-image-slice: 1;
+  }
+  100% {
+    border-image: linear-gradient(360deg, #0ef, #ff6ec7);
+    border-image-slice: 1;
+  }
 }
 
 /* 
@@ -397,8 +437,16 @@ CONTACT SECTION
 
 .footer {
   font-size: 1.2rem;
-  text-align: center;
+  justify-content: space-between;
   background-color: var(--secondary-background-color);
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   max-width: 1600px;
+}
+
+.footer .btn i {
+  font-size: 1.2rem;
+}
+
+.footer .btn {
+  padding: 0.4rem 0.8rem;
 }
