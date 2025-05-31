@@ -3,6 +3,8 @@ const headerEl = document.getElementById('header')
 const menuBtn = document.getElementById('menu-btn');
 const menu = document.getElementById('nav-bar');
 
+/* TOGGLING MENU */
+
 menuBtn.addEventListener('click', (e) => {
   e.stopPropagation();
   menu.classList.toggle('active')
@@ -14,9 +16,7 @@ window.addEventListener('click', (e) => {
   }
 })
 
-
-
-console.log(headerEl);
+/* HEADER STYLES */
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 135) {
@@ -26,10 +26,34 @@ window.addEventListener('scroll', () => {
   }
 })
 
+/* TOGGLING THEME */
+
+const body = document.body;
+const themeToggleBtn = document.querySelector('.theme-toggle-btn');
+let themeActive = localStorage.getItem('theme');
+if (themeActive) {
+  body.classList.add('light-theme');
+  themeToggleBtn.classList.add('active')
+}
+themeToggleBtn.addEventListener('click', () => {
+  body.classList.toggle('light-theme')
+  if (body.classList.contains('light-theme')) {
+    themeToggleBtn.classList.add('active');
+    let themeActive = body.classList.add('light-theme')
+    localStorage.setItem('theme', themeActive);
+  } else {
+    themeToggleBtn.classList.remove('active');
+    localStorage.removeItem('theme', themeActive)
+  }
+});
+
+
+
+
 /* Fading Contents */
 
 ScrollReveal({
-  reset: true,
+  reset: false,
   distance: '120px',
   duration: 2000,
   delay: 200
