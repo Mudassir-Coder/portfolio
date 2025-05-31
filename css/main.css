@@ -317,7 +317,6 @@ SEVICES SECTION
 ===================
 PROJECTS SECTION
 ===================
-
 */
 
 .projects {
@@ -353,6 +352,12 @@ PROJECTS SECTION
     transform: translateY(0px);
   }
 }
+
+/* 
+===================
+CONTACT SECTION
+===================
+*/
 
 .form {
   width: 63rem;
