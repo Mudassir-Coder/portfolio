@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! This site showcases my skills, project
 
 🔗 Live Demo
 
-👉 [Click here to visit the live site](https://mudassirkhan.github.io)  
+👉 [Click here to visit the live site](https://mudassir-coder.github.io/portfolio/)
 
 Technologies Used
 
