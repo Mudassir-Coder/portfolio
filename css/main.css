@@ -256,6 +256,7 @@ HERO SECTION
 
 .hero-img {
   width: 48rem;
+  animation: up-and-down 2s 1s infinite ease-in-out;
 }
 
 /* 
@@ -282,6 +283,7 @@ ABOUT SECTION
 
 .about-img {
   width: 490px;
+  animation: up-and-down 2s 1s infinite ease-in-out;
 }
 
 .about-description {
@@ -309,7 +311,8 @@ SEVICES SECTION
 .languages {
   display: grid;
   gap: var(--gap);
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 350px 350px 350px;
+  justify-content: center;
 }
 
 .single-technology {
@@ -318,12 +321,17 @@ SEVICES SECTION
   font-size: 2rem;
   text-align: center;
   justify-content: center;
-  border: 4px solid;
+  border: 8px solid;
   border-image: linear-gradient(45deg, #0ef, #ff6ec7);
-  border-image-slice: 1;
+  border-image-slice: 3;
   color: var(--primary-text);
-  /*  animation: animateBorder 3s infinite ease-in-out; */
+  cursor: pointer;
+  animation: up-and-down 2s 1s infinite ease-in-out;
   background-color: var(--secondary-background-color);
+}
+
+.single-technology:hover {
+  animation: animateBorder 3s infinite ease-in-out;
 }
 
 .single-technology > i {

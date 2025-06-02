@@ -53,7 +53,7 @@ themeToggleBtn.addEventListener('click', () => {
 /* Fading Contents */
 
 ScrollReveal({
-  reset: false,
+  reset: true,
   distance: '120px',
   duration: 2000,
   delay: 200
@@ -101,11 +101,9 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
   })
     .then(response => response.json())
     .then(data => {
-      console.log("Success:", data);
       const mesgEl = document.getElementById('mesg').textContent = 'Your Message Sent Succesfully';
     })
     .catch(error => {
-      console.error("Error:", error);
       mesgEl.textContent = "There was an error sending your message."
     });
 });
