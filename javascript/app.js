@@ -71,7 +71,7 @@ const typed = new Typed('.animatedText', {
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 200,
-  loop: true
+  loop: false
 })
 
 

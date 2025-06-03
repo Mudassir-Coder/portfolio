@@ -91,7 +91,6 @@ i {
 img {
   display: block;
   width: 100%;
-  border-radius: 15px;
 }
 
 ::-webkit-scrollbar {
@@ -188,18 +187,16 @@ HEADER SECTION
 }
 
 #menu-btn {
-  padding: 0.5rem 1rem;
-  justify-content: center;
+  padding: 0.2rem 0.7rem;
 }
 
 .theme-toggle-btn {
   padding: 0.1rem 0.7rem;
-  background-color: transparent;
-  color: var(--primary-btn-color);
+  box-shadow: var(--box-shadow);
 }
 
 .theme-toggle-btn:hover {
-  background-color: transparent;
+  background-color: var(--btn-hover);
 }
 
 .theme-toggle-btn > i {
@@ -256,6 +253,7 @@ HERO SECTION
 
 .hero-img {
   width: 48rem;
+  border-radius: 15px;
   animation: up-and-down 2s 1s infinite ease-in-out;
 }
 
@@ -283,6 +281,7 @@ ABOUT SECTION
 
 .about-img {
   width: 490px;
+  border-radius: 15px;
   animation: up-and-down 2s 1s infinite ease-in-out;
 }
 
@@ -369,18 +368,42 @@ PROJECTS SECTION
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 23rem 23rem 23rem;
   gap: var(--gap);
+  justify-content: center;
 }
 
 .single-project {
-  animation: up-and-down 2s 1s infinite ease-in-out;
-  transition: var(--transition);
+  overflow: hidden;
+  background-color: var(--secondary-background-color);
+  padding: 2rem 1rem;
+  border-radius: 24px;
+  position: relative;
+  box-shadow: var(--box-shadow);
 }
 
-.single-project:hover {
-  animation: none;
-  box-shadow: var(--box-shadow);
+.poroject-layer {
+  position: absolute;
+  background: linear-gradient(360deg, #0ef, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-btn-color);
+  transform: translateY(100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s;
+}
+
+.poroject-layer i {
+  cursor: pointer;
+  font-size: 4rem;
+  color: #eaeaea;
+}
+.single-project:hover .poroject-layer {
+  transform: translateY(0%);
 }
 
 .project-title {
