@@ -53,7 +53,7 @@ themeToggleBtn.addEventListener('click', () => {
 /* Fading Contents */
 
 ScrollReveal({
-  reset: true,
+  reset: false,
   distance: '120px',
   duration: 2000,
   delay: 200
@@ -71,7 +71,7 @@ const typed = new Typed('.animatedText', {
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 200,
-  loop: false
+  loop: true
 })
 
 
