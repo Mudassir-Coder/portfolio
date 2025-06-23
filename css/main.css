@@ -153,6 +153,42 @@ HEADER SECTION
 ====================
 */
 
+.loader {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader > span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-top: 4px solid #0ef;
+  animation: spinning 0.4s infinite ease-in-out;
+}
+
+@keyframes spinning {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 
+====================
+HEADER SECTION
+====================
+*/
+
 .header {
   position: fixed;
   width: 100%;
@@ -191,12 +227,14 @@ HEADER SECTION
 }
 
 .theme-toggle-btn {
+  background: transparent;
+  color: var(--primary-btn-color);
   padding: 0.1rem 0.7rem;
   box-shadow: var(--box-shadow);
 }
 
 .theme-toggle-btn:hover {
-  background-color: var(--btn-hover);
+  background-color: unset;
 }
 
 .theme-toggle-btn > i {
@@ -294,49 +332,6 @@ ABOUT SECTION
   margin-block: 3rem;
 }
 
-/* 
-====================
-SEVICES SECTION
-====================
-*/
-
-.language-heading {
-  font-size: 1.6rem;
-  text-align: center;
-  margin-block: 1rem;
-  color: var(--primary-text);
-}
-
-.languages {
-  display: grid;
-  gap: var(--gap);
-  grid-template-columns: 350px 350px 350px;
-  justify-content: center;
-}
-
-.single-technology {
-  position: relative;
-  height: 200px;
-  font-size: 2rem;
-  text-align: center;
-  justify-content: center;
-  border: 8px solid;
-  border-image: linear-gradient(45deg, #0ef, #ff6ec7);
-  border-image-slice: 3;
-  color: var(--primary-text);
-  cursor: pointer;
-  animation: up-and-down 2s 1s infinite ease-in-out;
-  background-color: var(--secondary-background-color);
-}
-
-.single-technology:hover {
-  animation: animateBorder 3s infinite ease-in-out;
-}
-
-.single-technology > i {
-  font-size: 3rem;
-}
-
 @keyframes animateBorder {
   0% {
     border-image: linear-gradient(0deg, #0ef, #ff6ec7);
@@ -430,8 +425,14 @@ CONTACT SECTION
 ===================
 */
 
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap);
+}
+
 .form {
-  width: 63rem;
+  width: 50rem;
   margin: 0rem auto;
   text-align: center;
 }

@@ -12,9 +12,6 @@
     content="MudassirCoder,mudassir-coder portfolio,frontend developer, mudassir-coder,web developer, HTML, CSS, JavaScript, React portfolio" />
   <meta name="author" content="MudassirCoder" />
 
-
-
-
   <title>MudassirCoder</title>
   <!-- CSS -->
   <link rel="stylesheet" href="css/main.css">
@@ -28,39 +25,39 @@
 </head>
 
 <body>
-  <main class="container">
-    <!-- HEADER SECTION -->
-    <header class="header place-items-center container" id="header">
-      <a href="index.html">
-        <h1 class="logo">MudassirCoder.</h1>
-      </a>
-      <nav class="nav-bar" id="nav-bar">
-        <ul class="list place-items-center">
-          <li class="list-item">
-            <a href="#" class="list-link">Home</a>
-          </li>
-          <li class="list-item">
-            <a href="#about" class="list-link">About</a>
-          </li>
-          <li class="list-item">
-            <a href="#projects" class="list-link">Projects</a>
-          </li>
-          <li class="list-item">
-            <a href="#contact" class="list-link">Contact</a>
-          </li>
+  <div class="loader"><span></span></div>
+  <!-- HEADER SECTION -->
+  <header class="header place-items-center container" id="header">
+    <a href="index.html">
+      <h1 class="logo">MudassirCoder.</h1>
+    </a>
+    <nav class="nav-bar" id="nav-bar">
+      <ul class="list place-items-center">
+        <li class="list-item">
+          <a href="index.html" class="list-link">Home</a>
+        </li>
+        <li class="list-item">
+          <a href="#about" class="list-link">About</a>
+        </li>
+        <li class="list-item">
+          <a href="#projects" class="list-link">Projects</a>
+        </li>
+        <li class="list-item">
+          <a href="#contact" class="list-link">Contact</a>
+        </li>
 
-        </ul>
-      </nav>
-      <div class="button-container place-items-center">
-        <button class="btn theme-toggle-btn">
-          <i class='ri-moon-line moon-icon'></i>
-          <i class='ri-sun-line sun-icon'></i>
-        </button>
-        <button class="btn screen-lg-hidden " id="menu-btn"><i class='bx bx-menu open-menu-icon'></i></button>
-      </div>
+      </ul>
+    </nav>
+    <div class="button-container place-items-center">
+      <button class="btn theme-toggle-btn">
+        <i class='ri-moon-line moon-icon'></i>
+        <i class='ri-sun-line sun-icon'></i>
+      </button>
+      <button class="btn screen-lg-hidden " id="menu-btn"><i class='bx bx-menu open-menu-icon'></i></button>
+    </div>
 
-    </header>
-
+  </header>
+  <main style="display: none;" class="container">
     <!-- Hero Section -->
 
     <section class="hero-section place-items-center" id="hero-section">
@@ -71,15 +68,15 @@
           <h3>And I'm a <span class="animatedText"></span></h3>
         </div>
         <p class="hero-description">I specialize in transforming ideas into responsive, user-friendly, and visually
-          appealing interfaces using modern web technologies. <strong>Skilled in HTML, CSS, JavaScript, React, and
+          appealing interfaces using modern web technologies. <strong>Skilled in HTML, CSS, JavaScript and
             Git</strong></p>
-        <button class="btn">Download CV</button>
-        <div class="social-media">
+        <a href="resume/resume.txt" download><button class="btn">Download CV</button></a>
+        <!--         <div class="social-media">
           <a href="#"><i class='bx bxl-twitter'></i></a>
           <a href="#"><i class='bx bxl-facebook'></i></a>
           <a href="#"><i class='bx bxl-instagram'></i></a>
           <a href="#"><i class='bx bxl-linkedin'></i></a>
-        </div>
+        </div> -->
       </div>
       <div class="hero-img">
         <img src="assets/hero-img.jpg" alt="hero-img">
@@ -100,27 +97,6 @@
           <button class="btn">Learn More</button>
         </p>
       </div>
-      <h3 class="section-heading">Technologies</h3>
-      <ul class="list languages">
-        <li class="list-item place-items-center single-technology">
-          <i class='bx bxl-html5'></i>HTML
-        </li>
-        <li class="list-item place-items-center single-technology">
-          <i class='bx bxl-css3'></i>CSS
-        </li>
-        <li class="list-item place-items-center single-technology">
-          <i class='bx bxl-javascript'></i>JS
-        </li>
-        <li class="list-item place-items-center single-technology">
-          <i class='bx bxl-nodejs'></i>Coming Soon
-        </li>
-        <li class="list-item place-items-center single-technology">
-          <i class='bx bxl-react'></i>Coming Soon
-        </li>
-        <li class="list-item place-items-center single-technology">
-          <i class='bx bxl-mongodb'></i>Coming Soon
-        </li>
-      </ul>
     </section>
 
     <!-- Projects Section -->
@@ -167,19 +143,31 @@
 
     <section class="section contant-section" id="contact">
       <h3 class="section-heading">Get In <span class="section-tag">Touch</span></h3>
-      <form action="https://formspree.io/f/xyzwngdj" id="contact-form" method="POST" class="form">
-        <div class="input-box">
-          <input id="name" type="text" placeholder="Your Name">
-          <input id="email" type="email" required placeholder="Email Address">
+      <div class="contact-container">
+        <form action="https://formspree.io/f/xyzwngdj" id="contact-form" method="POST" class="form">
+          <div class="input-box">
+            <input id="name" type="text" placeholder="Your Name">
+            <input id="email" type="email" required placeholder="Email Address">
+          </div>
+          <div class="input-box">
+            <input id="number" type="number" placeholder="Mobile Number">
+            <input id="subject" type="text" placeholder="Email Subject">
+          </div>
+          <textarea name="message" id="message" required placeholder="Your Message" cols="30" rows="10"></textarea>
+          <button type="submit" class="btn">Send Message</button>
+          <p id="mesg"></p>
+        </form>
+        <div class="map-section">
+          <address>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13606.727534557045!2d73.05511945!3d33.6844202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df954ad29bb0c9%3A0xa1c5b9f093eecaaa!2sRawalpindi%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1719135289143!5m2!1sen!2s"
+              width="100%" height="500px" style="border:0px; margin-top: 2rem;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </address>
         </div>
-        <div class="input-box">
-          <input id="number" type="number" placeholder="Mobile Number">
-          <input id="subject" type="text" placeholder="Email Subject">
-        </div>
-        <textarea name="message" id="message" required placeholder="Your Message" cols="30" rows="10"></textarea>
-        <button type="submit" class="btn">Send Message</button>
-        <p id="mesg"></p>
-      </form>
+
+      </div>
     </section>
   </main>
   <footer class="footer place-items-center">
