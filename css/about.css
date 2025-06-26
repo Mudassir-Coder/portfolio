@@ -1,0 +1,36 @@
+/* 
+====================
+ABOUT SECTION
+====================
+*/
+
+.about-inner-container {
+  gap: var(--gap);
+  justify-content: space-evenly;
+}
+
+.section-heading {
+  font-size: 2.7rem;
+  text-align: center;
+  font-weight: 600;
+  color: var(--section-heading);
+  margin-block: 3rem;
+}
+.section-tag {
+  color: var(--main-heading);
+}
+
+.about-img {
+  width: 490px;
+  border-radius: 15px;
+  animation: up-and-down 2s 1s infinite ease-in-out;
+}
+
+.about-description {
+  color: var(--primary-text);
+  width: 550px;
+}
+
+.about-description .btn {
+  margin-block: 3rem;
+}

@@ -5,14 +5,12 @@
   <!-- Basic Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MudassirCoder | Frontend Developer</title>
+  <title>MudassirDev | Frontend Developer</title>
   <meta name="description"
     content="MudassirCoder's portfolio – a frontend web developer skilled in HTML, CSS, JavaScript, and React. Let's build beautiful websites." />
   <meta name="keywords"
     content="MudassirCoder,mudassir-coder portfolio,frontend developer, mudassir-coder,web developer, HTML, CSS, JavaScript, React portfolio" />
   <meta name="author" content="MudassirCoder" />
-
-  <title>MudassirCoder</title>
   <!-- CSS -->
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/querries.css">
@@ -29,7 +27,7 @@
   <!-- HEADER SECTION -->
   <header class="header place-items-center container" id="header">
     <a href="index.html">
-      <h1 class="logo">MudassirCoder.</h1>
+      <h1 class="logo">MudassirDev.</h1>
     </a>
     <nav class="nav-bar" id="nav-bar">
       <ul class="list place-items-center">
@@ -97,46 +95,92 @@
           <button class="btn">Learn More</button>
         </p>
       </div>
-    </section>
+      <div class="portfolio">
 
-    <!-- Projects Section -->
+        <!-- Top Buttons -->
 
-    <section class="projects-section section" id="projects">
-      <h3 class="section-heading">My <span class="section-tag">PortFolio</span></h3>
-      <div class="projects">
-        <div class="single-project">
-          <figure>
-            <img src="assets/project-1.JPG" alt="DisneyClone" class="project-img">
-            <figcaption class="poroject-layer">
-              <a href="#"><i class="ri-external-link-line"></i></a>
-            </figcaption>
-          </figure>
+        <div class="buttons-container place-items-center">
+          <button class="btn" id="tech-btn">Technologies</button>
+          <button class="btn" id="crt-btn">Certificates</button>
+          <button class="btn" id="prjct-btn">Projects</button>
+          <button class="btn" id="srvc-btn">Services</button>
         </div>
-        <div class="single-project">
-          <figure>
-            <img src="assets/project-2.JPG" alt="Bootstrap'sClone" class="project-img">
-            <figcaption class="poroject-layer">
-              <a href="#"><i class="ri-external-link-line"></i></a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="single-project">
-          <figure>
-            <img src="assets/project-3.JPG" alt="Airbnb'sClone" class="project-img">
-            <figcaption class="poroject-layer">
-              <a href="#"><i class="ri-external-link-line"></i></a>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="single-project">
-          <figure>
-            <img src="assets/project-4.JPG" alt="Shopify'sClone" class="project-img">
-            <figcaption class="poroject-layer">
-              <a href="#"><i class="ri-external-link-line"></i></a>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
+
+        <!-- PortFolio -->
+
+        <div class="portfolio-inner-container">
+
+          <div id="technologies" class="content">
+
+            <div class="single-technology">
+              <h3 class="card-heading">HTML</h3>
+              <div class="icon"><img src="assets/png" alt="HTML"></div>
+              <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat provident modi
+                ea alias nulla quam id quasi quibusdam delectus, consectetur molestias voluptatum, commodi veritatis ut
+                possimus temporibus labore, voluptates enim!</p>
+            </div>
+
+
+            <div class="single-technology">
+              <h3 class="card-heading">CSS</h3>
+              <div class="icon">
+                <div class="icon"><img src="assets/png (2)" alt="CSS"></div>
+              </div>
+              <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat provident modi
+                ea alias nulla quam id quasi quibusdam delectus, consectetur molestias voluptatum, commodi veritatis ut
+                possimus temporibus labore, voluptates enim!</p>
+            </div>
+            <div class="single-technology">
+              <h3 class="card-heading">JavaScript</h3>
+              <div class="icon">
+                <div class="icon"><img src="assets/png (1)" alt="JavaScript"></div>
+              </div>
+              <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat provident modi
+                ea alias nulla quam id quasi quibusdam delectus, consectetur molestias voluptatum, commodi veritatis ut
+                possimus temporibus labore, voluptates enim!</p>
+            </div>
+          </div>
+
+          <div id="certificates" class="content">
+            <div class="single-certificate">
+
+              <div class="thumbnail">
+                <h3 class="card-heading">Full-Stack Web Engineer</h3>
+                <div class="icon certificate-icon"><img src="assets/nitsep-icon.png" alt="NITSEP"></div>
+                <h3 class="card-heading">(In Progress)</h3>
+              </div>
+              <div class="description place-items-center">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam quas id nobis
+                  ut. Quisquam a sequi dolore reprehenderit perspiciatis, quam atque facilis totam cupiditate, porro
+                  possimus voluptas exercitationem accusamus ducimus. <a href="#"><span
+                      class="certificate-reference">Learn more</span></a></p>
+              </div>
+            </div>
+            <div id="services" class="content">
+              <div class="single-service">
+
+                <div class="gig-thumbnail icon"> <img src="assets/gig-thumbnail-1.png" alt="HTML Conversion"></div>
+                <div class="description">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam quas id
+                    nobis
+                    ut. Quisquam a sequi dolore reprehenderit perspiciatis, quam atque facilis totam cupiditate, porro
+                    possimus voluptas exercitationem accusamus ducimus.</p>
+                </div>
+
+              </div>
+              <div class="single-service">
+
+                <div class="gig-thumbnail icon"><img src="assets/gig-thumbnail-2.png" alt="Frontend Devloper"></div>
+                <div class="description">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam quas id
+                    nobis
+                    ut. Quisquam a sequi dolore reprehenderit perspiciatis, quam atque facilis totam cupiditate, porro
+                    possimus voluptas exercitationem accusamus ducimus.</p>
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
 
     <!-- Contact Section -->
@@ -157,13 +201,22 @@
           <button type="submit" class="btn">Send Message</button>
           <p id="mesg"></p>
         </form>
-        <div class="map-section">
+        <div class="address-section">
           <address>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13606.727534557045!2d73.05511945!3d33.6844202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df954ad29bb0c9%3A0xa1c5b9f093eecaaa!2sRawalpindi%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1719135289143!5m2!1sen!2s"
-              width="100%" height="500px" style="border:0px; margin-top: 2rem;" allowfullscreen="" loading="lazy"
+              width="100%" height="300px" style="border:0px; margin-top: 2rem;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
+            <div class="contact-links">
+              <h3>Contact Me On</h3>
+              <ul class="links place-items-center">
+                <li class="list-link">Twitter</li>
+                <li class="list-link">Linkdin</li>
+                <li class="list-link">Phone No</li>
+                <li class="list-link">Email</li>
+              </ul>
+            </div>
           </address>
         </div>
 

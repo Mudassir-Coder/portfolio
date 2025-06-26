@@ -1,0 +1,75 @@
+/* 
+===================
+CONTACT SECTION
+===================
+*/
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: var(--gap);
+}
+
+.form {
+  width: 100%;
+  margin: 0rem auto;
+  text-align: center;
+}
+
+.input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.form .input-box input,
+.form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  background-color: var(--secondary-background-color);
+  margin: 0.7rem 0;
+  border-radius: 14px;
+}
+
+.form textarea {
+  resize: none;
+}
+
+.form .input-box input {
+  width: 49%;
+}
+
+.form .btn {
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.address-section {
+  background-color: var(--secondary-background-color);
+
+  border-radius: 12px;
+}
+
+.address-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+address > .contact-links {
+  margin-top: 1rem;
+}
+
+address > .contact-links > h3 {
+  text-align: center;
+  color: var(--section-heading);
+}
+
+address > .contact-links > .links {
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-block: 1rem;
+}

@@ -1,0 +1,103 @@
+:root {
+  --background-color: #1f242d;
+  --secondary-background-color: #323946;
+  --font-family: "Poppins", sans-serif;
+  --primary-text: #eaeaea;
+  --paragraph-text: #b5b5b5;
+  --main-heading: #0ef;
+  --section-heading: #ff6ec7;
+  --primary-btn-color: #db3300;
+  --btn-hover: #ff6a00;
+  --link-hover: #00ffb2;
+  --box-shadow: 0 4px 20px rgba(0, 255, 255, 0.15);
+  --gap: 1.4rem;
+  --transition: all 0.3s;
+}
+
+/* 
+====================
+RESETS 
+====================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  outline: unset;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--paragraph-text);
+  overflow-x: hidden;
+  transition: background-color 0.4s;
+}
+
+body.light-theme {
+  --background-color: #ffffff; /* Pure white for clean base */
+  --secondary-background-color: #f2f2f2; /* Light grey for contrast sections */
+  --font-family: "Poppins", sans-serif; /* Keep font consistent */
+  --primary-text: #1f1f1f; /* Almost black for readability */
+  --paragraph-text: #444444; /* Soft dark grey for body text */
+  --main-heading: #00bcd4; /* Lighter teal to replace #0ef */
+  --section-heading: #e91e63; /* Soft pink version of your neon pink */
+  --primary-btn-color: #ff5722; /* Orange-red (warmer than dark theme) */
+  --btn-hover: #ff7043; /* Lighter hover version of button */
+  --link-hover: #00b894; /* Muted green/teal to match light theme */
+  --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for light theme */
+}
+
+h1,
+h2 {
+  color: var(--primary-text);
+}
+
+p {
+  margin-block: 1.3rem;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  font-size: 1.9rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-btn-color);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background-color);
+}
