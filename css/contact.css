@@ -65,6 +65,7 @@ address > .contact-links {
 address > .contact-links > h3 {
   text-align: center;
   color: var(--section-heading);
+  font-size: 1.5rem;
 }
 
 address > .contact-links > .links {

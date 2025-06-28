@@ -44,6 +44,21 @@ PROJECTS SECTION
   margin-block: 2rem;
 }
 
+.portfolio-btn-active {
+  animation: fadding 0.4s 0s 1 ease-in;
+}
+
+@keyframes fadding {
+  from {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .single-technology {
   padding: 1rem;
   text-align: center;
@@ -58,6 +73,10 @@ PROJECTS SECTION
 
 .icon > img {
   width: 100px;
+}
+
+#certificates {
+  display: none;
 }
 
 .single-certificate {
@@ -81,7 +100,7 @@ PROJECTS SECTION
 }
 
 #services {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(2, 400px);
   place-content: center;
   gap: var(--gap);
@@ -96,6 +115,42 @@ PROJECTS SECTION
 
 .gig-thumbnail > img {
   width: 100%;
+}
+
+.note {
+  color: var(--primary-text);
+}
+
+.single-testomonial {
+  flex-direction: column;
+  text-align: center;
+  gap: 0;
+  background-color: var(--secondary-background-color);
+  padding-block: 2rem;
+  border-radius: 8px;
+}
+
+.single-testomonial > .profile-pic > img {
+  width: 100px;
+  border-radius: 50%;
+}
+.single-testomonial > .rating {
+  color: var(--primary-text);
+  font-weight: 600;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.swiper {
+  width: auto;
+  height: auto;
+}
+
+.swiper-pagination {
+  bottom: 0.3rem !important;
+}
+.swiper-pagination-bullet {
+  background-color: var(--primary-text);
 }
 
 @keyframes up-and-down {

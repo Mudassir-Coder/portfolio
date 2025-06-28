@@ -59,10 +59,6 @@
   #technologies {
     grid-template-columns: repeat(2, 350px);
   }
-
-  .contact-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
 @media (max-width: 768px) {
   html {
@@ -75,6 +71,7 @@
   #technologies {
     grid-template-columns: repeat(1, 350px);
   }
+
   .single-certificate {
     grid-template-columns: 1fr;
   }
@@ -84,11 +81,29 @@
   #services {
     grid-template-columns: repeat(1, 1fr);
   }
-  .form .input-box input {
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .address-section > address {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1rem;
     width: 100%;
+  }
+  .address-section > address > iframe {
+    height: auto;
+    width: auto;
   }
 
   .form {
+    width: auto;
+  }
+
+  .form .input-box input {
     width: 100%;
   }
 
@@ -98,7 +113,7 @@
   }
 
   address > .contact-links > .links {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .footer {

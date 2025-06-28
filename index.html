@@ -12,14 +12,17 @@
     content="MudassirCoder,mudassir-coder portfolio,frontend developer, mudassir-coder,web developer, HTML, CSS, JavaScript, React portfolio" />
   <meta name="author" content="MudassirCoder" />
   <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/querries.css">
   <!-- Remix Icon CDN -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-  <!-- BoxIcon CDN -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <!-- Favicon Icon -->
   <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+  <!-- Swiper JS -->
+
+
 </head>
 
 <body>
@@ -32,13 +35,13 @@
     <nav class="nav-bar" id="nav-bar">
       <ul class="list place-items-center">
         <li class="list-item">
-          <a href="index.html" class="list-link">Home</a>
+          <a href="#" class="list-link">Home</a>
         </li>
         <li class="list-item">
           <a href="#about" class="list-link">About</a>
         </li>
         <li class="list-item">
-          <a href="#projects" class="list-link">Projects</a>
+          <a href="#testimonials" class="list-link">Testomonials</a>
         </li>
         <li class="list-item">
           <a href="#contact" class="list-link">Contact</a>
@@ -68,13 +71,7 @@
         <p class="hero-description">I specialize in transforming ideas into responsive, user-friendly, and visually
           appealing interfaces using modern web technologies. <strong>Skilled in HTML, CSS, JavaScript and
             Git</strong></p>
-        <a href="resume/resume.txt" download><button class="btn">Download CV</button></a>
-        <!--         <div class="social-media">
-          <a href="#"><i class='bx bxl-twitter'></i></a>
-          <a href="#"><i class='bx bxl-facebook'></i></a>
-          <a href="#"><i class='bx bxl-instagram'></i></a>
-          <a href="#"><i class='bx bxl-linkedin'></i></a>
-        </div> -->
+        <a href="./Muhammad_Mudassir_Khan_Resume.pdf" download><button class="btn">Download CV</button></a>
       </div>
       <div class="hero-img">
         <img src="assets/hero-img.jpg" alt="hero-img">
@@ -92,7 +89,6 @@
           experience building beautiful and responsive websites.
           I work with HTML, CSS, JavaScript, and React to craft
           fast, user-friendly digital experiences.
-          <button class="btn">Learn More</button>
         </p>
       </div>
       <div class="portfolio">
@@ -102,22 +98,22 @@
         <div class="buttons-container place-items-center">
           <button class="btn" id="tech-btn">Technologies</button>
           <button class="btn" id="crt-btn">Certificates</button>
-          <button class="btn" id="prjct-btn">Projects</button>
           <button class="btn" id="srvc-btn">Services</button>
+          <button class="btn" id="prjct-btn">Projects</button>
         </div>
 
         <!-- PortFolio -->
 
         <div class="portfolio-inner-container">
 
-          <div id="technologies" class="content">
+          <div id="technologies" class="portfolio-btn-active">
 
             <div class="single-technology">
               <h3 class="card-heading">HTML</h3>
               <div class="icon"><img src="assets/png" alt="HTML"></div>
-              <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat provident modi
-                ea alias nulla quam id quasi quibusdam delectus, consectetur molestias voluptatum, commodi veritatis ut
-                possimus temporibus labore, voluptates enim!</p>
+              <p class="description">HTML is the backbone of every website. I use semantic HTML to build
+                well-structured, SEO-friendly, and accessible web pages. It helps define the layout and content of the
+                website efficiently.</p>
             </div>
 
 
@@ -126,19 +122,18 @@
               <div class="icon">
                 <div class="icon"><img src="assets/png (2)" alt="CSS"></div>
               </div>
-              <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Repellat provident modi
-                ea alias nulla quam id quasi quibusdam delectus, consectetur molestias voluptatum, commodi veritatis ut
-                possimus temporibus labore, voluptates enim!</p>
+              <p class="description">CSS brings style to the web. I use modern CSS techniques like Flexbox, Grid,
+                transitions, and responsive media queries to create visually appealing and mobile-friendly interfaces.
+              </p>
             </div>
             <div class="single-technology">
               <h3 class="card-heading">JavaScript</h3>
               <div class="icon">
                 <div class="icon"><img src="assets/png (1)" alt="JavaScript"></div>
               </div>
-              <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat provident modi
-                ea alias nulla quam id quasi quibusdam delectus, consectetur molestias voluptatum, commodi veritatis ut
-                possimus temporibus labore, voluptates enim!</p>
+              <p class="description">JavaScript adds life to web pages. I use it to build dynamic features, interactive
+                UI elements, and real-time functionalities. It's essential for creating responsive and engaging user
+                experiences.</p>
             </div>
           </div>
 
@@ -151,38 +146,118 @@
                 <h3 class="card-heading">(In Progress)</h3>
               </div>
               <div class="description place-items-center">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam quas id nobis
-                  ut. Quisquam a sequi dolore reprehenderit perspiciatis, quam atque facilis totam cupiditate, porro
-                  possimus voluptas exercitationem accusamus ducimus. <a href="#"><span
-                      class="certificate-reference">Learn more</span></a></p>
+                <p>NITSEP is a government-recognized training institute focused on empowering youth through practical,
+                  job-ready skills in technology and digital fields. With a strong emphasis on hands-on learning, NITSEP
+                  offers courses in web development, graphic design, freelancing, programming, and more. The institute
+                  aims to bridge the gap between academic education and industry demands, helping students build
+                  professional portfolios, gain certifications, and prepare for real-world opportunities both locally
+                  and globally.<a href="#"><span class="certificate-reference">Learn more</span></a></p>
               </div>
             </div>
-            <div id="services" class="content">
-              <div class="single-service">
+          </div>
+          <div id="services" class="content">
+            <div class="single-service">
 
-                <div class="gig-thumbnail icon"> <img src="assets/gig-thumbnail-1.png" alt="HTML Conversion"></div>
-                <div class="description">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam quas id
-                    nobis
-                    ut. Quisquam a sequi dolore reprehenderit perspiciatis, quam atque facilis totam cupiditate, porro
-                    possimus voluptas exercitationem accusamus ducimus.</p>
-                </div>
-
+              <div class="gig-thumbnail icon"> <img src="assets/gig-thumbnail-1.png" alt="HTML Conversion"></div>
+              <div class="description">
+                <p>I will convert your Figma, PSD, or XD design into a clean, responsive HTML website using HTML, CSS,
+                  and JavaScript. Fast delivery, pixel-perfect code, and mobile-friendly layout guaranteed.</p>
               </div>
-              <div class="single-service">
 
-                <div class="gig-thumbnail icon"><img src="assets/gig-thumbnail-2.png" alt="Frontend Devloper"></div>
-                <div class="description">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam quas id
-                    nobis
-                    ut. Quisquam a sequi dolore reprehenderit perspiciatis, quam atque facilis totam cupiditate, porro
-                    possimus voluptas exercitationem accusamus ducimus.</p>
-                </div>
+            </div>
+            <div class="single-service">
+
+              <div class="gig-thumbnail icon"><img src="assets/gig-thumbnail-2.png" alt="Frontend Devloper"></div>
+              <div class="description">
+                <p>I will build a fast, responsive, and visually appealing frontend using HTML, CSS, and JavaScript.
+                  Whether it's a landing page, portfolio, or full website UI, I ensure clean code and smooth user
+                  experience.</p>
               </div>
             </div>
           </div>
     </section>
+    <section class="testomonials-section" id="testimonials">
+      <h3 class="section-heading">Got <span class="section-tag">Inspired</span></h3>
+      <div class="testomonial-inner-container">
+        <p class="note">These fictional testimonials are creatively written as placeholders until real client feedback
+          is received.</p>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="single-testomonial place-items-center">
+                <div class="profile-pic"><img src="assets/t-8.jpg" alt="Profile Pic"></div>
+                <div class="rating">Nuroto Uzumaki</div>
+                <p>"Believe it! I thought becoming Hokage was tough — but building something this cool? You're
+                  definitely on the path to greatness!"</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="single-testomonial place-items-center">
+                <div class="profile-pic"><img src="assets/t-1.jpg" alt="Profile Pic"></div>
+                <div class="rating">Kakashi Hatake</div>
+                <p>"I’ve seen many things... but your frontend skills are no illusion. Clean code, clean design — you're
+                  already ahead of the game."</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="single-testomonial place-items-center">
+                <div class="profile-pic"><img src="assets/t-2.jpg" alt="Profile Pic"></div>
+                <div class="rating">Sasuke Uchiha</div>
+                <p>"Hmph. I don’t compliment just anyone. But this… this is impressive. Keep pushing your limits."</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="single-testomonial place-items-center">
+                <div class="profile-pic"><img src="assets/t-3.jpg" alt="Profile Pic"></div>
+                <div class="rating">Hinata Hyuga</div>
+                <p>"Your work speaks so gently... just like a breeze that carries strength behind its calm. It truly
+                  inspired me."</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="single-testomonial place-items-center">
+                <div class="profile-pic"><img src="assets/t-4.jpg" alt="Profile Pic"></div>
+                <div class="rating">Minato Namikaze</div>
+                <p>"Speed isn't everything — precision and intention matter just as much. Your work reflects that
+                  perfectly. It’s clean, fast, and thoughtfully built."
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="single-testomonial place-items-center">
+                <div class="profile-pic"><img src="assets/t-5.jpg" alt="Profile-pic"></div>
+                <div class="rating">Mituski</div>
+                <p>"Fascinating. I haven't seen many designs like yours — they're both calculated and expressive. You
+                  have potential, Mudassir."</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="single-testomonial place-items-center">
+                <div class="profile-pic"><img src="assets/t-6.jpg" alt="Profile-pic"></div>
+                <div class="rating">Sarada Uchiha</div>
+                <p>"It’s not just powerful — it’s smart. Your UI is sharp, clean, and totally worthy of being showcased
+                  in the next gen of shinobi tools."</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="single-testomonial place-items-center">
+                <div class="profile-pic"><img src="assets/t-7.jpg" alt="Profile-pic"></div>
+                <div class="rating">Shikamaru Nara</div>
+                <p>"Tch... what a drag... but I gotta admit, your work makes even lazy people like me wanna build
+                  something cool. Nicely done."
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
 
+      </div>
+    </section>
     <!-- Contact Section -->
 
     <section class="section contant-section" id="contact">
@@ -211,10 +286,18 @@
             <div class="contact-links">
               <h3>Contact Me On</h3>
               <ul class="links place-items-center">
-                <li class="list-link">Twitter</li>
-                <li class="list-link">Linkdin</li>
-                <li class="list-link">Phone No</li>
-                <li class="list-link">Email</li>
+                <li class="list-item ">
+                  <a href="https://x.com/MudassirDev" target="_blank" class="list-link place-items-center"><i
+                      class="ri-twitter-x-fill"></i>
+                    @mudassirdev</a>
+                </li>
+                <li class="list-item">
+                  <a href="www.linkedin.com/in/muhammad-mudassir-625421371" target="_blank"
+                    class="list-link place-items-center"><i class="ri-linkedin-fill"></i>
+                    Muhammad Mudassir</a>
+                </li>
+                <li class="list-item place-items-center"><i class="ri-phone-line"></i>+92 319 0502930</li>
+                <li class="list-item place-items-center"><i class="ri-mail-send-line"></i>mudassirdevv@gmail.com</li>
               </ul>
             </div>
           </address>

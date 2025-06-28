@@ -38,7 +38,7 @@ HERO SECTION
 }
 
 .hero-img {
-  width: 80vw;
+  width: 100%;
   border-radius: 15px;
   animation: up-and-down 2s 1s infinite ease-in-out;
 }

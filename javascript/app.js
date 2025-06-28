@@ -1,3 +1,5 @@
+
+
 window.addEventListener('load', () => {
 
   document.querySelector('.loader').style.display = 'none';
@@ -50,6 +52,27 @@ window.addEventListener('load', () => {
     }
   });
 
+  /* About Buttons Functionality */
+
+  const sections = {
+    'tech-btn': 'technologies',
+    'srvc-btn': 'services',
+    'crt-btn': 'certificates',
+  }
+
+  for (let btnId in sections) {
+    document.getElementById(btnId).addEventListener('click', () => {
+      for (let key in sections) {
+        document.getElementById(sections[key]).style.display = 'none';
+        document.getElementById(sections[key]).classList.remove('portfolio-btn-active');
+
+      }
+      console.log("Clicked:", btnId, "→ Show:", sections[btnId]);
+      document.getElementById(sections[btnId]).style.display = 'grid';
+      document.getElementById(sections[btnId]).classList.add('portfolio-btn-active')
+    })
+  }
+
 
 
 
@@ -78,10 +101,33 @@ window.addEventListener('load', () => {
   })
 
 
+  /* Swiper Js */
 
 
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    autoplay: {
+      delay: 3000, // 3 seconds per slide
+      disableOnInteraction: false, // Keep autoplay running after user touches
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+  });
 
 
+  /* Form Function */
 
 
   document.getElementById("contact-form").addEventListener("submit", function (event) {
