@@ -59,6 +59,9 @@
   #technologies {
     grid-template-columns: repeat(2, 350px);
   }
+  .single-project > a > figure {
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 768px) {
   html {

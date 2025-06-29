@@ -58,6 +58,7 @@ window.addEventListener('load', () => {
     'tech-btn': 'technologies',
     'srvc-btn': 'services',
     'crt-btn': 'certificates',
+    'prjct-btn': 'projects'
   }
 
   for (let btnId in sections) {
@@ -85,8 +86,8 @@ window.addEventListener('load', () => {
     delay: 200
   })
 
-  ScrollReveal().reveal('.hero-content,.hero-description,.languages,.about-description,.social-media,.section-heading');
-  ScrollReveal().reveal('.hero-title,.hero-img,.about-img,.form', { delay: 300, distance: '300px', origin: 'left' });
+  ScrollReveal().reveal('.hero-content,.hero-description,.languages,.about-description,.swiper,.social-media,.section-heading');
+  ScrollReveal().reveal('.hero-title,.hero-img,.about-img,.contact-container,.portfolio-inner-container', { delay: 300, distance: '300px', origin: 'left' });
   ScrollReveal().reveal('.section-heading');
 
 
@@ -158,3 +159,5 @@ window.addEventListener('load', () => {
   });
 
 })
+
+
